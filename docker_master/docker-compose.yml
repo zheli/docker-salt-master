@@ -6,5 +6,7 @@ master:
   environment:
     LOG_LEVEL: debug
   volumes:
-      - ../data/master.d:/etc/salt/master.d:ro
+      - ../data/master.d:/etc/salt/master.d
       - ../data/pki:/etc/salt/pki
+      - ../data/srv/salt:/srv/salt
+      - ../data/srv/pillar:/srv/pillar

@@ -20,7 +20,8 @@ RUN apt-get install -y salt-master=2015.5.3+ds-1trusty1
 
 # Volumes
 
-VOLUME ['/etc/salt/pki', '/var/cache/salt', '/var/logs/salt', '/etc/salt/master.d', '/srv/salt']
+VOLUME ["/etc/salt/pki", "/var/cache/salt", "/var/logs/salt", "/etc/salt/master.d", "/srv/salt",\
+ "/srv/pillar"]
 
 # Add Run File
 
