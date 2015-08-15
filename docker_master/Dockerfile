@@ -28,6 +28,9 @@ VOLUME ["/etc/salt/pki", "/var/cache/salt", "/var/logs/salt", "/etc/salt/master.
 ADD run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 
+ADD run_debug.sh /run_debug.sh
+RUN chmod +x /run_debug.sh
+
 # Ports
 
 EXPOSE 4505 4506
